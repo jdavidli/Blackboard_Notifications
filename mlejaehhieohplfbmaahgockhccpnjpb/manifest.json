@@ -5,7 +5,7 @@
    "content_scripts": [ {
       "all_frames": true,
       "js": [ "js/swindust-jquery.min.js", "js/jquery.getUrlVars.js", "js/swindust-func.js", "swindust.js" ],
-      "matches": [ "http://blackboard.swin.edu.au/*", "http://blackboard.swinburne.edu.au/*", "https://blackboard.swinburne.edu.au/*", "https://blackboard.swin.edu.au/*", "http://ilearn.swin.edu.au/*", "https://ilearn.swin.edu.au/*" ],
+      "matches": [ "http://blackboard.case.edu/*"],
       "run_at": "document_start"
    } ],
    "description": "Provides efficiencies and aesthetics to an otherwise boring and inefficient Blackboard Learning Management System!",
@@ -14,11 +14,8 @@
       "16": "images/icon16.png",
       "48": "images/icon48.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLIBRFz5cUJ8ko1zKkycMUbAbdzz1t4cLWJR8XpAoJNJIJni+Avt773ofrI7Um711e+NBUFswXYHCTrk6FTD/yDR3TEW1q3xW3CBW/qod67OB/UMZWD+DdVCGCEXqZz8Nq75H0w0Hp9myvDPJdvD5MTYo+XpJ4f3ErHjnU4GDv7QIDAQAB",
    "manifest_version": 2,
    "name": "SwinDust for Swinburne Blackboard",
    "options_page": "options.html",
-   "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "1.42",
    "web_accessible_resources": [ "bb_img/close_mini.gif", "bb_img/stripe.png", "css/allpages.css", "css/options.css", "css/topmenu.css" ]
 }
