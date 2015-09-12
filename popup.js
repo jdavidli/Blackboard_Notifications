@@ -93,6 +93,12 @@ function renderStatus(statusText) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  
+// document.getElementById('fuck').onclick = function() {
+// //  window.location.href = "https://blackboard.case.edu/webapps/bb-social-learning-bb_bb60/execute/mybb?cmd=display&toolId=AlertsOnMyBb_____AlertsTool";
+// //window.location.replace("http://www.google.com");
+
+// };
   getCurrentTabUrl(function(url) {
     // Put the image URL in Google search.
     renderStatus('Performing Google Image search for ' + url);

@@ -10,8 +10,21 @@
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
+
+  "background":{
+  "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "js": ["popup.js"]
+    }
+  ],
+
   "permissions": [
     "activeTab",
+    "tabs",
     "https://ajax.googleapis.com/"
   ]
 }
