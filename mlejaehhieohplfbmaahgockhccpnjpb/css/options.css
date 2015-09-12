@@ -1,0 +1,238 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+	background-image: -webkit-linear-gradient(bottom, rgb(238,239,255) 100%, rgb(255,255,255) 0%);
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+input {
+	position: relative;
+	top: 1px;
+}
+
+#dialog-form label, #dialog-form input { display:block; }
+#dialog-form input.text { margin-bottom:12px; width:95%; padding: .4em; }
+#dialog-form fieldset { padding:0; border:0; margin-top:25px; }
+#dialog-form .ui-dialog .ui-state-error { padding: .3em; }
+#dialog-form .validateTips { border: 1px solid transparent; padding: 0.3em; text-align: center; }
+		
+
+
+a, a:active, a:visited, a:hover {
+	color: #7e974c;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+	width: 100%;
+}
+
+#logo {
+	color: #FFFFFF;
+	float: right;
+	margin-top: -5px;
+}
+
+#banner {
+	font-size: 16px;
+	padding: 10px;
+	font-weight: bold;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#033e6b), to(#023459));
+	border-bottom: 1px solid #111111;
+	border-top: 1px solid #111111;
+	color: #FFFFFF;
+}
+
+#banner a {
+	color: #DDD;
+}
+
+#banner a:hover {
+	color: #FEFEFE;
+}
+
+
+#version {
+	font-size: 12px;
+	margin-top: 2px;
+	text-align: left;
+}
+
+#market_link {
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+#container {
+	padding: 12px 20px 12px 20px;
+}
+
+
+.message {
+	
+	clear: both;
+	margin-bottom: 10px;
+	padding: 7px;
+	font-style: italic;
+	
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	border-width: 1px;
+	border-style: solid;
+	
+}
+
+.success {
+	
+	background-color: #DFF2BF;
+	border-color: #4F8A10;
+	
+}
+
+.info {
+	background-color: #cce3f5;	
+	color: #00529B;
+}
+
+.info a {
+	color: #00529B;	
+	text-decoration: underline;
+}
+
+.optionSegment {
+	color: #111111;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #CCC;
+	background-color: #FCFCFC;
+	-webkit-border-radius: 4px;
+}
+
+.optionSegment .optionArea {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+
+}
+
+.optionSegment .optionSegmentMainHeader {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 5px;
+	color: #919191;
+	border-bottom: 1px dashed #999999;
+	margin-left: 5px;
+	margin-right: 5px;
+		
+}
+
+.optionSegment .optionSegmentHeader {
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 9px;
+	margin-bottom: 4px;
+	
+}
+
+.optionSegment .optionSegmentSubHeader {
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 9px;
+	
+}
+
+.optionSegment .optionSet {
+	padding: 2px 20px 2px 20px;
+	list-style: none;	
+}
+
+.optionSegment .optionSet .optionValue {
+	margin-right: 5px;
+	margin-top: 2px;	
+	border: 1px solid #555555;
+}
+
+.optionSegment .optionSet .optionValueIndent {
+	margin-left: 25px;
+	margin-top: 3px;
+}
+
+
+#colorCust {
+	margin-top: 10px;	
+}
+
+#samplePot {
+	margin-right: 20px;
+	margin-top: 5px;
+	display: inline-block;
+	height: 100px;
+}
+
+#samplePot > .sample {
+	width: 250px;
+	height: 50px;
+	margin: 5px;
+	border: 1px solid #AAAAAA;
+	display: inline-block;
+	text-align: center;
+}
+
+#samplePot > .sample > .optionValueSlider {
+	width: 250px;	
+	top: 60px;
+}
+
+#samplePot > .grads > .sample-grad {
+	top: 60px;
+	height: 50px;
+	width: 250px;
+	border: 1px solid #888888;
+}
+
+#samplePot > .sample .ui-slider-horizontal {
+    background: -webkit-linear-gradient(left, #000000 1%, #ff0000 2%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 98%, #ffffff 99%);
+	
+}
+
+#samplePot > .sample .ui-slider-handle {
+	width: 15px;	
+}
+
+.optionSegment .optionSet select {
+	width: 129px;	
+	margin-top: 2px;
+	margin-right: 5px;
+	border: 1px solid #555555;
+	text-align: center;
+	padding-left: 10px;
+	height: 20px;
+}
+
+.optionSegment .optionSet iframe {
+	margin-top: 15px;
+	border: 1px solid #000000;	
+}
+
+.optionSegment .optionSet input.color {
+	text-align: center;
+	height: 20px;
+}
+
+
+#refresh_sample {
+	width: 129px;	
+	margin: 0px;
+}

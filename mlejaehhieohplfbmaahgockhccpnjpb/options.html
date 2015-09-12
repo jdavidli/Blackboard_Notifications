@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SwinDust for Swinburne Blackboard - Options</title>
+
+	<link rel="stylesheet" href="css/options.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/smoothness/jquery-ui.custom.css" type="text/css" media="all" />
+
+	<script type="text/javascript" src="js/swindust-jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.getUrlVars.js"></script>
+	<script type="text/javascript" src="js/swindust-jquery-ui.custom.min.js"></script>
+	<script type="text/javascript" src="js/jscolor/jscolor.js"></script>
+	<script type="text/javascript" src="js/swindust-func.js"></script>
+
+	<script type="text/javascript" src="js/swindust-options.js"></script>
+
+	</script>
+</head>
+<body>
+
+    <div id="banner">
+        <div id="logo"><img src="images/icon128.png" width="64" alt="SwinDust for Swinburne Blackboard" /></div>
+        <div id="vanity">SwinDust <em>for Swinburne Blackboard</em></div>
+        <div id="vanity-small">by <a href="http://www.shadowsplace.net/projects/chrome-extensions/swindust-for-swinburne-blackboard/" target="_newtab">Shadow Productions</a></div>
+        <span id="version">Version ?.?</span> &raquo; <span id="market_link"><a href="https://chrome.google.com/webstore/detail/mlejaehhieohplfbmaahgockhccpnjpb" target="_newtab">Support, Help & Change Log</a></span>
+    </div>
+    
+    <form id="bbDusterOptions" action="" onsubmit="return false;">
+        
+        <div id="container">
+                
+            <div id="options">
+            
+             	<div class="message info">
+                   	If you found this extension useful, please <a href="https://chrome.google.com/webstore/detail/mlejaehhieohplfbmaahgockhccpnjpb" target="_newtab">rate it in the Chrome Web Store</a>!                    
+                </div>
+                       
+            	<div class="message success">
+                    Your settings are saved automatically. Remember to refresh any Blackboard pages to see the changes.                    
+                </div>                
+                        
+                <div class="optionSegment">
+                              
+                    <div class="optionSegmentMainHeader">Main Options</div>
+                        
+                        <div class="optionArea">
+                        
+                            <div class="optionSegmentHeader">Login</div>
+                            
+                            <ul class="optionSet">
+                            
+                                <li>
+                                    <input class="optionValue" type="checkbox" id="autoLogin" />
+                                    <label for="autoLogin">Enable Automatic Login</label>
+                                </li>
+                                
+                                <li>
+                                    <input class="optionValue" type="checkbox" id="loginCleanup" />
+                                    <label for="loginCleanup">Cleanup login page (remove browser detection, Java applets, etc)</label>
+                                </li>
+                                
+                                <!--<li>
+                                    <input class="optionValue" type="checkbox" id="detailedTitles" />
+                                    <label for="detailedTitles">Use detailed page titles</label>
+                                </li>-->
+								
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="optionArea">
+                        
+                            <div class="optionSegmentHeader">My Course Units / Subjects</div>
+                            
+                            <ul class="optionSet">
+                            
+                                <li>
+                                <input class="optionValue" type="checkbox" id="mainOneColumn" />
+                                <label for="mainOneColumn">Push main module content into a single column (useful for netbooks)</label>
+                                </li>
+                                
+                                <li>
+                                <input class="optionValue" type="checkbox" id="realOneColumn" />
+                                <label for="realOneColumn">Push all module content into a single column (useful for... tiny netbooks?)</label>
+                                </li>
+                                
+                                <li>
+                                	
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="optionArea">
+                        
+                            <div class="optionSegmentHeader">Header</div>
+                            
+                            <ul class="optionSet">
+                            
+                              <li>
+                              <input class="optionValue" type="checkbox" id="headerUseToolbar" />
+                              <label for="headerUseToolbar">Replace the header with a slighty more useful toolbar-like area</label>
+                              </li>
+                              
+                              <li>
+                              <input class="optionValue" type="checkbox" id="headerShowWebmail" />
+                              <label for="headerShowWebmail">Show a link to <strong>Student Webmail</strong> in the toolbar</label>
+                              </li>
+                              
+                              <li>
+                              <input class="optionValue" type="checkbox" id="headerShowMySwin" />
+                              <label for="headerShowMySwin">Show a link to <strong>My.Swinburne</strong> in the toolbar</label>
+                              </li>
+                              
+                              <li>
+                              <input class="optionValue" type="checkbox" id="headerShowLibrary" />
+                              <label for="headerShowLibrary">Show a link to the <strong>Library</strong> in the toolbar</label>
+                              </li>
+                              
+                              <li>
+                              <input class="optionValue" type="checkbox" id="headerShowAllocate" />
+                              <label for="headerShowAllocate">Show a link to <strong>Allocate+</strong> in the toolbar</label>
+                              </li>
+                                                    
+                            </ul>
+                                                    
+                        </div>
+                        
+                        <div class="optionArea">
+                        
+                            <div class="optionSegmentHeader">Sidebar</div>
+                            
+                            <ul class="optionSet">
+                            
+                                <li>
+                                <input class="optionValue" type="checkbox" id="sidebarAddSubjectGrades" />
+                                <label for="sidebarAddSubjectGrades">Add <em>Subject Grades</em> button</label>
+                                </li>
+                                
+                                <li>
+                                <input class="optionValue" type="checkbox" id="sidebarAddTools" />
+                                <label for="sidebarAddTools">Add <em>Tools</em> button</label>
+                                </li>
+                                                                
+                                <li>
+                                <input class="optionValue" type="checkbox" id="sidebarRemoveSubtables" />
+                                <label for="sidebarRemoveSubtables">Remove the useless tables and buttons in the navigation area</label></li>						
+    
+    							<li>
+                                <input class="optionValue" type="checkbox" id="sidebarAlphaSort" />
+                                <label for="sidebarAlphaSort">Alphabetically sort links in the course menu</label></li>						
+    
+                            </ul>
+                            
+                            
+                        </div>
+                        
+                        <div class="optionArea">
+                        
+                            <div class="optionSegmentHeader">Subject Pages</div>
+                            
+                            <ul class="optionSet">
+                            
+                                <li>
+                                <input class="optionValue" type="checkbox" id="useTransitions" />
+                                <label for="useTransitions">Use transition effects on content</label>
+(reduces style flickering when loading)
+								</li>
+                                   
+                                <li>
+                                <input class="optionValue" type="checkbox" id="removeHeaderImages" />
+                                <label for="removeHeaderImages">Remove silly icons from page header</label>
+                                </li>
+                                
+                                <li>
+                                <input class="optionValue" type="checkbox" id="removeHeaderBanner" />
+                                <label for="removeHeaderBanner">Remove 'trendy' image banners</label>
+                                </li>
+                                
+                                <li>
+                                <input class="optionValue" type="checkbox" id="substituteHeaderWithSubject" />
+                                <label for="substituteHeaderWithSubject">Replace the image banners with the subject name</label>
+                                </li>
+                                                            
+                                <li>
+                                <input class="optionValue" type="checkbox" id="removeBreadcrumbs" />
+                                <label for="removeBreadcrumbs">Hide navigational breadcrumbs</label>
+                                </li>
+                            
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="optionArea">
+                        
+                            <div class="optionSegmentHeader">Subject Content</div>
+                            
+                            <ul class="optionSet">
+                            
+                                <li>
+                                <input type="checkbox" id="contentToNewTab" />
+                                <label for="contentToNewTab">Open subject content (such as PDFs) in a new tab</label>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                                            
+                      <div class="optionSegmentMainHeader">Colour Customization</div>
+                                            
+                      <div class="optionArea">
+                      
+                            <div class="optionSegmentHeader">Colour Scheme</div>
+                                    
+                            <ul class="optionSet">
+                            
+                                <li>
+                                    <input type="checkbox" id="cEnable" />
+                                    <label for="cEnable">Enable Colour Customizations</label>
+                                </li>
+                            </ul>
+                             
+                            <ul class="optionSet" id="colorCust">
+                                                                           
+                                <li>
+                               		Use the sliders below to pick two colours that you like. Drag the slider to the far left for black, and far right for white.
+                                </li>
+                                
+                                <li>
+                                	<div id="samplePot">
+                                    	<div class="sample" id="cOne-Sample">
+                                    		<div class="optionValueSlider" id="cOne"></div>
+                                        </div>
+                                        <div class="sample" id="cTwo-Sample">
+                                    		<div class="optionValueSlider" id="cTwo"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+ <!--                               <li>
+                               		<div class="optionSegmentSubHeader">Sidebar</div>
+                                </li>
+                                
+                                <li>
+                                    <input class="color optionValue" name="cSidebarHeaderBackgroundGradStart" id="cSidebarHeaderBackgroundGradStart" size="16" /> 
+                                    <label for="cSidebarHeaderBackgroundGradStart">Header Background (Gradient Start)</label>
+                                </li>
+
+                                <li>
+                                    <input class="color optionValue" name="cSidebarHeaderBackgroundGradMid" id="cSidebarHeaderBackgroundGradMid" size="16" /> 
+                                    <label for="cSidebarHeaderBackgroundGradMid">Header Background (Gradient Middle)</label>
+                                </li>
+                                
+                                <li>
+                                    <input class="color optionValue" name="cSidebarHeaderBackgroundGradEnd" id="cSidebarHeaderBackgroundGradEnd" size="16" /> 
+                                    <label for="cSidebarHeaderBackgroundGradEnd">Header Background (Gradient End)</label>
+                                </li>
+
+                                <li>
+                                    <input class="color optionValue" name="cSidebarHeaderForecolour" id="cSidebarHeaderForecolour" size="16" /> 
+                                    <label for="cSidebarHeaderForecolour">Header Text Colour</label>
+                                </li>
+                                
+                                <li>
+                                    <input class="color optionValue" name="cSidebarHeaderShadowColour" id="cSidebarHeaderShadowColour" size="16" /> 
+                                    <label for="cSidebarHeaderShadowColour">Header Text Shadow</label>
+                                </li>
+                                
+                                <li>
+                                    <input class="color optionValue" name="cSidebarBackgroundGradStart" id="cSidebarBackgroundGradStart" size="16" /> 
+                                    <label for="cSidebarBackgroundGradStart">Background (Gradient Start)</label>
+                                </li>
+                                
+                                <li>
+                                    <input class="color optionValue" name="cSidebarBackgroundGradEnd" id="cSidebarBackgroundGradEnd" size="16" /> 
+                                    <label for="cSidebarBackgroundGradEnd">Background (Gradient End)</label>
+                                </li>                                
+                                                                
+                                <li>
+                                    <input class="color optionValue" name="cSidebarForecolour" id="cSidebarForecolour" size="16" />
+                                    <label for="cSidebarForecolour">Text Colour</label>
+                                </li>
+                                
+                                <li>
+                                    <input class="color optionValue" name="cSidebarShadowColour" id="cSidebarShadowColour" size="16" /> 
+                                    <label for="cSidebarShadowColour">Text Shadow</label>
+                                </li> -->
+                                                                
+                                <li>
+                                    <div class="optionSegmentSubHeader">Sample Page</div>
+                                </li>
+                                
+                                <li>
+                                	<input type="button" value="Refresh Sample" name="refresh_sample" id="refresh_sample" />
+                                </li>
+                                
+                         		<li>
+                                
+                                    <iframe id="sample_frame" name="sample_frame" src="about:blank" height="300px" width="100%" frameborder="0">
+                                    </iframe>
+                                
+                                </li>
+                                
+                            </ul>
+                                                                         
+                      </div>
+                  	
+           		</div>
+            
+            </div>
+        
+        </div>
+    
+    </form>
+    
+    
+    <div id="dialog-form" title="Automatic Login Details">
+  <p id="validationTips" class="validateTips">Enter the credentials that you want to use for the Automatic Login below:</p>
+
+        <form action="">
+        <fieldset>
+            <label for="autoLoginUser">Username</label>
+            <input type="text" name="autoLoginUser" id="autoLoginUser" class="text ui-widget-content ui-corner-all" />
+            <label for="autoLoginPass">Password</label>
+            <input type="password" name="autoLoginPass" id="autoLoginPass" value="" class="text ui-widget-content ui-corner-all" />
+        </fieldset>
+        </form>
+    </div>
+    
+        
+		
+</body>
+</html>

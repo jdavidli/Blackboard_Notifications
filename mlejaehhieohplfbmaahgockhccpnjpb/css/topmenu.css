@@ -1,0 +1,111 @@
+html, body, ul, li, a {
+	margin: 0;
+	padding: 0;		
+}
+
+body {	
+	font-family: Arial, Geneva, Helvetica;
+	color: #666;
+		
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.2, rgb(194,190,194)), color-stop(0.5, rgb(204,204,204)), color-stop(1, rgb(230,230,230)));
+	
+}
+
+#top_menu {
+	font-size:12px;
+	list-style: none;
+	width: 100%;
+	text-align: left;
+	float: left;
+}
+
+#top_menu li {
+	
+	position: relative;
+	float: left;
+	border-right: 1px solid #d5d5d5;
+	
+}
+
+#top_menu li.button {
+	background-image: -webkit-gradient(
+										linear,
+										left bottom,
+										left top,
+										color-stop(0.2, rgb(209,209,209)),
+										color-stop(0.5, rgb(219,219,219)),
+										color-stop(1, rgb(230,230,230))
+									);
+}
+
+#top_menu li.button a:hover {
+
+	background: #FAFAFA;
+	cursor: pointer;
+
+}
+
+.navLink {
+	
+	height: 32px;
+	line-height: 22px;
+	
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+		
+	background: none;
+		
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial Narrow, Arial, sans-serif;
+	
+	float: left;
+	color: #494949;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	
+}
+
+#top_menu li.right {
+
+	float: right;
+	border-left: 1px solid #CCCCCC;
+
+}
+
+#top_menu .nav_pageTitleParent {	
+	border: none;	
+	font-weight: normal;	
+	text-align: center;
+	padding-top: 8px;
+	
+	text-shadow: 2px 2px 2px #CDCDCD;
+
+}
+
+#nav_pageTitle {
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+#nav_pageTitleExtra {
+	margin-left: 4px;
+	font-weight: bold;	
+}
+
+#nav_welcomeDot {
+	margin-left: 10px;
+	top: -2px;
+	position: relative;
+	font-size: 15px;
+	
+}
+
+#nav_welcome {
+	margin-left: 8px;
+	vertical-align: top;
+}

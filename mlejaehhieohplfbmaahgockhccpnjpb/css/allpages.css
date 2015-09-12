@@ -1,0 +1,15 @@
+
+.subjectHideLink {
+	float: right;
+	margin-top: 2px;
+	width: 13px;
+	height: 12px;
+}
+
+.subjectHideLink > img {
+	opacity: .5 !important;	
+}
+
+.subjectHideLink :hover {
+	opacity: 1 !important;
+}
